@@ -9,7 +9,7 @@ paths:
     develop_compile: '../develop'
 
   stylus:
-    base: '../src/assets/stylesheets/*.styl'
+    base: '../src/assets/stylesheets/**/*.styl'
     src: '../src/assets/stylesheets/application.styl'
     compile: '../develop/css/stylus.css'
     develop_compile: '../develop/css'
