@@ -426,6 +426,55 @@ th {
   padding: 0;
 }
 
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?588bxb");
+  src: url("../fonts/icomoon.eot?#iefix588bxb") format('embedded-opentype'), url("../fonts/icomoon.woff?588bxb") format('woff'), url("../fonts/icomoon.ttf?588bxb") format('truetype'), url("../fonts/icomoon.svg?588bxb#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-cart-in:before {
+  content: "\e600";
+}
+.icon-cart:before {
+  content: "\e601";
+}
+.icon-chevron-down:before {
+  content: "\e602";
+}
+.icon-chevron-round-left:before {
+  content: "\e603";
+}
+.icon-user:before {
+  content: "\e604";
+}
 * {
   box-sizing: border-box;
 }
@@ -451,6 +500,84 @@ body {
   width: 982px;
   margin-left: auto;
   margin-right: auto;
+}
+.header-service-panel {
+  height: 80px;
+  background: url("../images/header-shadow.png") center bottom no-repeat #fff;
+}
+.header-logo-line {
+  height: 70px;
+  background-color: #fff;
+  padding: 7px 25px 0;
+  font-size: 0;
+}
+.header-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #4a0082;
+  text-align: center;
+  padding: 10px 0 0;
+  display: inline-block;
+  margin-right: 33px;
+}
+.header-logo .icon-cart {
+  color: #4a0082;
+  font-size: 1.5rem;
+}
+.header-motto {
+  font-weight: 100;
+  color: #6708af;
+  font-size: 2.6875rem;
+  display: inline-block;
+}
+.header-cart-content {
+  font-size: 1.125rem;
+  font-weight: 100;
+  display: inline-block;
+}
+.header-cart-status {
+  background: #4a0082;
+  height: 50px;
+  color: #fff;
+  padding: 0 25px 0 29px;
+}
+.header-cart-icon {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  padding-top: 8px;
+  position: relative;
+  top: 6px;
+  margin: 0 34px 0 0;
+}
+.header-cart-icon .icon-cart-in {
+  color: #4a0082;
+  font-size: 1.4rem;
+}
+.header-cart-content {
+  position: relative;
+  top: 2px;
+}
+.header-make-order-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.header-make-order-link .icon-make-order {
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: url("../images/icon-header-make-order.png") center center no-repeat transparent;
 }
 .footer {
   text-align: center;
