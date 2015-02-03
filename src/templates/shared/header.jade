@@ -1,0 +1,104 @@
+.header
+  .pull-left
+    img.header-logo(src="images/lobby_logo.png", width="77", height="27", alt="Logo")
+
+  .pull-right
+    .header-controls
+
+      nav.nav
+        ul.nav-list
+          li.nav-item
+            a.nav-link.nav-link__active(href="#") Current Session
+          li.nav-item
+            a.nav-link(href="#") Cashier
+          li.nav-item
+            a.nav-link(href="#") Help
+
+      .header-time 12:00 UTC+4
+
+      .header-user
+        img.header-user-avatar(src="http://lorempixel.com/g/56/56", width="28", height="28")
+        span.header-user-caret
+
+      .header-chat
+        span.header-chat-label Chat
+        span.header-chat-dialogs 0
+
+.filter
+  .pull-left
+    nav.nav.nav__type-filter-left
+      ul.nav-list
+        li.nav-item
+          a.nav-link.nav-link__active(href="#") Cache games
+        li.nav-item
+          a.nav-link(href="#") Tourney
+        li.nav-item
+          a.nav-link(href="#") Sit'n'Go
+  .pull-right
+    nav.nav.nav__type-filter-right
+      ul.nav-list
+        li.nav-item
+          a.nav-link(href="#")
+            | My tables
+            span.nav-digit 2
+        li.nav-item
+          a.nav-link.nav-link__active.js-filter-button(href="#") Filter
+  .clearfix
+
+.filter-content.js-filter-content
+  .filter-labels
+    .filter-label maximum players
+    .filter-label game type
+    .filter-label stakes
+    .filter-label buy in
+    .filter-label sort by
+    .filter-label advanced
+
+  .filter-controls
+    .filter-control-group
+      nav.nav.nav__type-players
+        ul.nav-list
+          li.nav-item
+            a.nav-link.nav-link__active(href="#") 2
+          li.nav-item
+            a.nav-link(href="#") 3
+          li.nav-item
+            a.nav-link(href="#") 5
+          li.nav-item
+            a.nav-link(href="#") 9
+
+    .filter-control-group
+      .filter-select
+        | Hold'em
+        .header-user-caret.header-user-caret__at-select
+
+    .filter-control-group
+      .filter-range
+        .filter-range-stripe(style="width: 50%; left: 25%;")
+        .filter-range-drag(style="left: 25%;")
+          .filter-range-drag-label $ 0.4
+        .filter-range-drag(style="left: 75%;")
+          .filter-range-drag-label $ 0.6
+
+    .filter-control-group
+      .filter-range
+        .filter-range-stripe(style="width: 100%; left: 0%;")
+        .filter-range-drag(style="left: 0;")
+        .filter-range-drag(style="left: 100%;")
+        .filter-range-drag-label-default No limit
+
+    .filter-control-group
+      nav.nav.nav__type-stakes
+        ul.nav-list
+          li.nav-item
+            a.nav-link.nav-link__active(href="#") Stakes
+          li.nav-item
+            a.nav-link(href="#") Avg.
+          li.nav-item
+            a.nav-link(href="#") Pot
+
+    .filter-control-group
+      nav.nav.nav__type-advanced
+        ul.nav-list
+          li.nav-item
+            a.nav-link(href="#") Clear all
