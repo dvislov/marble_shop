@@ -504,6 +504,19 @@ body {
 .content {
   background-color: #fff;
   padding: 40px 0 0;
+  position: relative;
+  z-index: 0;
+}
+.content:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: url("../images/header-shadow.png") center bottom no-repeat;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: -10px;
 }
 .btn {
   height: 23px;
@@ -519,6 +532,79 @@ body {
 .header-service-panel {
   height: 80px;
   background: url("../images/header-shadow.png") center bottom no-repeat #fff;
+  padding: 0 25px;
+}
+.icon-chevron-round-left {
+  color: #4a0082;
+  font-size: 2.8rem;
+  position: relative;
+  top: 14px;
+}
+.header-nav {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.header-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header-nav-item {
+  display: inline-block;
+}
+.header-nav-item.active .header-nav-link {
+  color: #6708af;
+  border-bottom: 2px solid #6708af;
+}
+.header-nav-link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  padding: 21px 15px 25px;
+  color: #665c6e;
+  font-weight: 300;
+}
+.header-user {
+  padding-top: 26px;
+}
+.header-user .icon-user {
+  color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+.header-user .icon-chevron-down {
+  color: #8826d3;
+  font-size: 0.3rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.header-username {
+  font-weight: 300;
+  font-size: 0.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 0;
+}
+.header-username:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(transparent, #fff);
 }
 .header-logo-line {
   height: 70px;

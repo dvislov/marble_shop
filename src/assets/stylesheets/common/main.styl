@@ -15,6 +15,18 @@ sticky-footer(172px)
 .content
   background-color #fff
   padding 40px 0 0
+  position relative
+  z-index 0
+  &:after
+    content ''
+    display block
+    width 100%
+    height 10px
+    background url(../images/header-shadow.png) center bottom no-repeat
+    position absolute
+    z-index 0
+    left 0
+    bottom -10px
 
 .btn
   height 23px
