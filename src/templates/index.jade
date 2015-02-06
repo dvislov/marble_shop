@@ -33,7 +33,40 @@ html
               span —
           .vcard-editor-content
             .vcard-back
+              img.vcard-marble-logo-back(src="images/marble-white.svg", width="90%")
             .vcard-front
+              img.vcard-marble-logo(src="images/marble.svg", width="280")
+              form
+                input.vcard-input.vcard-input-editable.vcard-name(type="text", value="Дмитрий Вислов", readonly="true")
+                .vcard-position Front-End developer
+
+                .pull-left
+                  .control-group
+                    .control-label Моб.:
+                    .controls
+                      input.vcard-input.vcard-input-editable.vcard-mobile(type="text", value="+7 (960) 360-58-67", readonly="true")
+                  .control-group
+                    .control-label E-mail:
+                    .controls
+                      input.vcard-input.vcard-input-editable.vcard-email(type="email", value="vdv73rus@marble-x.ru", readonly="true")
+                  .control-group
+                    .control-label Skype:
+                    .controls
+                      input.vcard-input.vcard-input-editable.vcard-email(type="text", value="vdv73rus", readonly="true")
+                  .control-group
+                    .control-label M-ID:
+                    .controls
+                      .fake-input MF-7382
+
+                .pull-right
+                  .control-group
+                    input.vcard-input.vcard-input-editable.vcard-site(type="text", value="www.marble-x.ru", placeholder="Персональный сайт", readonly="true")
+                  .control-group
+                    input.vcard-input.vcard-input-editable.vcard-phone(type="text", placeholder="Телефон офиса", value="+7 (8352) 62-68-40", readonly="true")
+                  .control-group
+                    textarea.vcard-input.vcard-textarea.vcard-input-editable.vcard-address(placeholder="Адрес офиса",readonly="true") г.Чебоксары, ул.Пресноводская, д.5
+                .clearfix
+
 
           .vcard-editor-footer
             .pull-left
