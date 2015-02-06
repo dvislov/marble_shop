@@ -102,6 +102,15 @@
   background #fff
   padding 40px 36px 0 40px
   color #510b76
+  form
+    ::-webkit-input-placeholder
+      color transparent
+    ::-moz-placeholder
+      color transparent
+    :-moz-placeholder
+      color transparent
+    ::-ms-input-placeholder
+      color transparent
 
 .vcard-marble-logo
   position relative
@@ -113,8 +122,10 @@
   font-size 14px
   font-weight 100
 
-.vcard-input
+.vcard-input,
+.vcard-textarea
   border: none
+  border-bottom 1px solid transparent
   font-size 14px
   &:focus
     outline: none
@@ -123,7 +134,8 @@
   resize: none
 
 .pull-right
-  .vcard-input
+  .vcard-input,
+  .vcard-textarea
     text-align right
     width 202px
 
@@ -135,9 +147,15 @@
   font-weight 100
   width 100%
 
+.control-name
+  position relative
+  .controls-remove
+    top 6px
+
 .control-group
   overflow hidden
-  margin-bottom 4px
+  margin-bottom 3px
+  position relative
 .control-label
   width 50px
   float left
@@ -146,13 +164,52 @@
 .controls
   margin-left 50px
   width 200px
+  position relative
+  padding-right 16px
   .vcard-input
     width 100%
+
+.controls-remove
+  display none
+  width 12px
+  height 12px
+  border-radius 50%
+  text-align center
+  cursor pointer
+  background-color #510b76
+  position absolute
+  right 0
+  top 0
+  span
+    font-size 12px
+    line-height 1
+    font-family 'Times New Roman'
+    color #fff
+    position relative
+    top -2px
 
 .fake-input
   font-size 14px
 
 
+form.editable
+  .controls-remove
+    display block
+  .vcard-input
+    border-bottom 1px solid #dcdcdc
+  .pull-right
+    .vcard-input,
+    .vcard-textarea
+      padding-right 16px
+
+  ::-webkit-input-placeholder
+    color #ccc
+  ::-moz-placeholder
+    color #ccc
+  :-moz-placeholder
+    color #ccc
+  ::-ms-input-placeholder
+    color #ccc
 
 
 .vcard-editor-footer
