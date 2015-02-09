@@ -25,41 +25,39 @@ html
             a.btn(href="javascript:void(0);", data-action="change-form-open-state") Заполнить и купить
           .clearfix
 
-        .vcard-editor
-          h3.vcard-editor-header
-            | Персональные данные
-            span.vcard-editor-collapse(data-action="change-form-open-state")
-              | Свернуть
-              span —
-          .vcard-editor-content
-            .vcard-back
-              img.vcard-marble-logo-back(src="images/marble-white.svg", width="90%")
-            .vcard-front
-              img.vcard-marble-logo(src="images/marble.svg", width="280")
-              form(data-object="vcard-form")
+        form.vcard-form(data-object="vcard-form")
+          .vcard-editor
+            h3.vcard-editor-header
+              | Персональные данные
+              span.vcard-editor-collapse(data-action="change-form-open-state")
+                | Свернуть
+                span —
+            .vcard-editor-content
+              .vcard-back
+                img.vcard-marble-logo-back(src="images/marble-white.svg", width="90%")
+              .vcard-front
+                img.vcard-marble-logo(src="images/marble.svg", width="280")
                 .control-name
-                  input.vcard-input.vcard-name(type="text", value="Дмитрий Вислов", readonly="true")
-                  .controls-remove(data-action="clear-self-input-value")
-                    span &times;
-                .vcard-position Front-End developer
+                  input.vcard-input.vcard-name(type="text", value="Дмитрий Вислов", readonly="true", tabindex="1", required="required")
+                .vcard-position Региональный представитель
 
                 .pull-left
                   .control-group
                     .control-label Моб.:
                     .controls
-                      input.vcard-input.vcard-mobile(type="text", value="+7 (960) 360-58-67", readonly="true")
+                      input.vcard-input.vcard-mobile(type="text", value="+7 (960) 360-58-67", readonly="true", tabindex="2", placeholder="Мобильный телефон")
                       .controls-remove(data-action="clear-self-input-value")
                         span &times;
                   .control-group
                     .control-label E-mail:
                     .controls
-                      input.vcard-input.vcard-email(type="email", value="vdv73rus@marble-x.ru", readonly="true")
+                      input.vcard-input.vcard-email(type="email", value="vdv73rus@marble-x.ru", readonly="true", tabindex="3", placeholder="Электронная почта")
                       .controls-remove(data-action="clear-self-input-value")
                         span &times;
                   .control-group
                     .control-label Skype:
                     .controls
-                      input.vcard-input.vcard-email(type="text", value="vdv73rus", readonly="true")
+                      input.vcard-input.vcard-email(type="text", value="vdv73rus", readonly="true", tabindex="4", placeholder="Скайп")
                       .controls-remove(data-action="clear-self-input-value")
                         span &times;
                   .control-group
@@ -69,33 +67,33 @@ html
 
                 .pull-right
                   .control-group
-                    input.vcard-input.vcard-site(type="text", value="www.marble-x.ru", placeholder="Персональный сайт", readonly="true")
+                    input.vcard-input.vcard-site(type="text", value="www.marble-x.ru", placeholder="Персональный сайт", readonly="true", tabindex="5")
                     .controls-remove(data-action="clear-self-input-value")
                       span &times;
                   .control-group
-                    input.vcard-input.vcard-phone(type="text", placeholder="Телефон офиса", value="+7 (8352) 62-68-40", readonly="true")
+                    input.vcard-input.vcard-phone(type="text", placeholder="Телефон офиса", value="+7 (8352) 62-68-40", readonly="true", tabindex="6")
                     .controls-remove(data-action="clear-self-input-value")
                       span &times;
                   .control-group
-                    textarea.vcard-textarea.vcard-address(placeholder="Адрес офиса",readonly="true") г.Чебоксары, ул.Пресноводская, д.5
+                    textarea.vcard-textarea.vcard-address(placeholder="Адрес офиса", readonly="true", tabindex="7") г.Чебоксары, ул.Пресноводская, д.5
                     .controls-remove(data-action="clear-self-input-value")
                       span &times;
                 .clearfix
 
 
-          .vcard-editor-footer
-            .pull-left
-              a.btn.btn-edit(href="javascript:void(0);", data-action="change-form-edit-state") Изменить данные
-            .pull-right
-              .vcards-total
-                span.vcards-total-price
-                  | 20
-                  span.vcards-total-price-currency mp
-                span.vcards-total-count
-                  | 100
-                  span.vcards-total-price-currency шт
-              a.btn(href="javascript:void(0);") В корзину
-            .clearfix
-            p.vcard-editor-annotation Внимание! Заверность данных компания ответственности не несет. Все данные вы вводите на свое усмотрение и проверяете их тоже сами. Имя, M-ID, и регион представительства берется согласно вашему профилю.
+            .vcard-editor-footer
+              .pull-left
+                a.btn.btn-edit(href="javascript:void(0);", data-action="change-form-edit-state") Изменить данные
+              .pull-right
+                .vcards-total
+                  span.vcards-total-price
+                    | 20
+                    span.vcards-total-price-currency mp
+                  span.vcards-total-count
+                    | 100
+                    span.vcards-total-price-currency шт
+                input.btn(type="submit", value="В корзину")
+              .clearfix
+              p.vcard-editor-annotation Внимание! Заверность данных компания ответственности не несет. Все данные вы вводите на свое усмотрение и проверяете их тоже сами. Имя, M-ID, и регион представительства берется согласно вашему профилю.
 
   include shared/footer

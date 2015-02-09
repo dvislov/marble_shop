@@ -30,6 +30,7 @@ sticky-footer(172px)
 
 .btn
   height 23px
+  line-height 23px
   background-color #4A0082
   border 1px solid #4A0082
   border-radius 4px
@@ -37,7 +38,10 @@ sticky-footer(172px)
   font-size 0.75rem
   display inline-block
   text-decoration none
-  padding 5px 15px
+  padding 0 15px
+.btn[disabled="disabled"]
+  background-color #ccc
+  border 1px solid #ccc
 
 .btn-edit
   background-color #fff
