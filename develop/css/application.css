@@ -941,15 +941,19 @@ body {
 }
 .vcard-form ::-webkit-input-placeholder {
   color: transparent;
+  font-weight: 300;
 }
 .vcard-form ::-moz-placeholder {
   color: transparent;
+  font-weight: 300;
 }
 .vcard-form :-moz-placeholder {
   color: transparent;
+  font-weight: 300;
 }
 .vcard-form ::-ms-input-placeholder {
   color: transparent;
+  font-weight: 300;
 }
 .vcard-marble-logo {
   position: relative;
