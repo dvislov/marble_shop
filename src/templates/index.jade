@@ -41,7 +41,7 @@ html
                   input.vcard-input.vcard-name(type="text", value="Дмитрий Вислов", readonly="true", tabindex="1", required="required")
                 .vcard-position Региональный представитель
 
-                .pull-left
+                .vcard-form-part.vcard-form-part-left
                   .control-group
                     .control-label Моб.:
                     .controls
@@ -65,7 +65,7 @@ html
                     .controls
                       .fake-input MF-7382
 
-                .pull-right
+                .vcard-form-part.vcard-form-part-right
                   .control-group
                     input.vcard-input.vcard-site(type="text", value="www.marble-x.ru", placeholder="Персональный сайт", readonly="true", tabindex="5")
                     .controls-remove(data-action="clear-self-input-value")
@@ -78,7 +78,6 @@ html
                     textarea.vcard-textarea.vcard-address(placeholder="Адрес офиса", readonly="true", tabindex="7") г.Чебоксары, ул.Пресноводская, д.5
                     .controls-remove(data-action="clear-self-input-value")
                       span &times;
-                .clearfix
 
 
             .vcard-editor-footer

@@ -9,12 +9,22 @@ $(document).ready ->
     else
       $(".vcard-form input[type='submit']").attr('disabled', 'disabled')
 
+
     $('.vcard-name').focus();
+
 
     if $('.vcard-input, .vcard-textarea').attr('readonly')
       $('.vcard-input, .vcard-textarea').removeAttr('readonly')
     else
       $('.vcard-input, .vcard-textarea').attr('readonly', 'readonly')
+
+    if ($("[data-object='vcard-form']").hasClass('editable'))
+      $('.vcard-input, .vcard-textarea').parents('.control-group').show()
+    else
+      $('.vcard-input[value=""]').parents('.control-group').hide()
+      if ($('.vcard-textarea').val() == "")
+        $('.vcard-textarea').parents('.control-group').hide()
+
 
   # Clear inputs by click-on-cross
   $('[data-action="clear-self-input-value"]').click ->

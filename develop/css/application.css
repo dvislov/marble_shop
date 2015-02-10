@@ -980,8 +980,18 @@ body {
 .vcard-textarea {
   resize: none;
 }
-.pull-right .vcard-input,
-.pull-right .vcard-textarea {
+.vcard-form-part {
+  position: absolute;
+  bottom: 30px;
+}
+.vcard-form-part-left {
+  left: 40px;
+}
+.vcard-form-part-right {
+  right: 36px;
+}
+.vcard-form-part-right .vcard-input,
+.vcard-form-part-right .vcard-textarea {
   text-align: right;
   width: 202px;
 }
@@ -1050,8 +1060,8 @@ form.editable .controls-remove {
 form.editable .vcard-input {
   border-bottom: 1px solid #dcdcdc;
 }
-form.editable .pull-right .vcard-input,
-form.editable .pull-right .vcard-textarea {
+form.editable .vcard-form-part-right .vcard-input,
+form.editable .vcard-form-part-right .vcard-textarea {
   padding-right: 16px;
 }
 form.editable ::-webkit-input-placeholder {
