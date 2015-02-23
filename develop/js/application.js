@@ -34,7 +34,12 @@
       }
     });
     return $('[data-action="change-form-open-state"]').click(function() {
-      return $('.vcard-editor').slideToggle();
+      $('.vcard-editor').slideToggle();
+      if ($(".btn-form-state").attr('disabled')) {
+        return $(".btn-form-state").removeAttr('disabled');
+      } else {
+        return $(".btn-form-state").attr('disabled', 'disabled');
+      }
     });
   });
 

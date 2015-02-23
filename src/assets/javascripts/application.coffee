@@ -38,3 +38,8 @@ $(document).ready ->
   # Toggle vcard form
   $('[data-action="change-form-open-state"]').click ->
     $('.vcard-editor').slideToggle()
+
+    if $(".btn-form-state").attr('disabled')
+      $(".btn-form-state").removeAttr('disabled')
+    else
+      $(".btn-form-state").attr('disabled', 'disabled')
