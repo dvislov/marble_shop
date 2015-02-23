@@ -74,10 +74,12 @@ html
                     input.vcard-input.vcard-phone(type="text", placeholder="Телефон офиса", value="+7 (8352) 62-68-40", readonly="true", tabindex="6")
                     .controls-remove(data-action="clear-self-input-value")
                       span &times;
-                  .control-group
-                    textarea.vcard-textarea.vcard-address(placeholder="Адрес офиса", readonly="true", tabindex="7") г.Чебоксары, ул.Пресноводская, д.5
-                    .controls-remove(data-action="clear-self-input-value")
+                  .control-group.control-group-address
+                    input.vcard-input.vcard-address-line1(type="text", placeholder="Адрес", value="г.Чебоксары", readonly="true", tabindex="7")
+                    .controls-remove.controls-remove-address(data-action="clear-self-input-value")
                       span &times;
+                  .control-group
+                    input.vcard-input.vcard-address-line2(type="text", placeholder="", value="ул.Речинков, д.5", readonly="true", tabindex="8")
 
 
             .vcard-editor-footer

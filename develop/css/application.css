@@ -967,22 +967,13 @@ body {
   font-size: 14px;
   font-weight: 100;
 }
-.vcard-input,
-.vcard-textarea {
+.vcard-input {
   border: none;
   border-bottom: 1px solid transparent;
   font-size: 14px;
 }
-.vcard-input:focus,
-.vcard-textarea:focus {
+.vcard-input:focus {
   outline: none;
-}
-.vcard-textarea {
-  background: transparent;
-  resize: none;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 14px;
 }
 .vcard-form-part {
   position: absolute;
@@ -994,8 +985,7 @@ body {
 .vcard-form-part-right {
   right: 36px;
 }
-.vcard-form-part-right .vcard-input,
-.vcard-form-part-right .vcard-textarea {
+.vcard-form-part-right .vcard-input {
   text-align: right;
   width: 202px;
 }
@@ -1017,6 +1007,9 @@ body {
   overflow: hidden;
   margin-bottom: 3px;
   position: relative;
+}
+.control-group-address {
+  margin-bottom: 0;
 }
 .control-label {
   width: 50px;
@@ -1061,13 +1054,14 @@ body {
 form.editable .controls-remove {
   display: block;
 }
-form.editable .vcard-input,
-form.editable .vcard-textarea {
+form.editable .vcard-input {
   border-bottom: 1px solid #dcdcdc;
 }
-form.editable .vcard-form-part-right .vcard-input,
-form.editable .vcard-form-part-right .vcard-textarea {
+form.editable .vcard-form-part-right .vcard-input {
   padding-right: 16px;
+}
+form.editable .control-group-address {
+  margin-bottom: 3px;
 }
 form.editable ::-webkit-input-placeholder {
   color: #ccc;

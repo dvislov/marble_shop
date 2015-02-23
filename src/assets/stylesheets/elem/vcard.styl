@@ -132,20 +132,12 @@
   font-size 14px
   font-weight 100
 
-.vcard-input,
-.vcard-textarea
+.vcard-input
   border: none
   border-bottom 1px solid transparent
   font-size 14px
   &:focus
     outline: none
-
-.vcard-textarea
-  background transparent
-  resize: none
-  padding-top 0
-  padding-bottom 0
-  line-height 14px
 
 .vcard-form-part
   position absolute
@@ -154,8 +146,7 @@
   left 40px
 .vcard-form-part-right
   right 36px
-  .vcard-input,
-  .vcard-textarea
+  .vcard-input
     text-align right
     width 202px
 
@@ -176,6 +167,8 @@
   overflow hidden
   margin-bottom 3px
   position relative
+.control-group-address
+  margin-bottom 0
 .control-label
   width 50px
   float left
@@ -217,13 +210,13 @@
 form.editable
   .controls-remove
     display block
-  .vcard-input,
-  .vcard-textarea
+  .vcard-input
     border-bottom 1px solid #dcdcdc
   .vcard-form-part-right
-    .vcard-input,
-    .vcard-textarea
+    .vcard-input
       padding-right 16px
+  .control-group-address
+    margin-bottom 3px
 
   ::-webkit-input-placeholder
     color #ccc

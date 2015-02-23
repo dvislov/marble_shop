@@ -13,25 +13,25 @@ $(document).ready ->
     $('.vcard-name').focus();
 
 
-    if $('.vcard-input, .vcard-textarea').attr('readonly')
-      $('.vcard-input, .vcard-textarea').removeAttr('readonly')
+    if $('.vcard-input').attr('readonly')
+      $('.vcard-input').removeAttr('readonly')
     else
-      $('.vcard-input, .vcard-textarea').attr('readonly', 'readonly')
+      $('.vcard-input').attr('readonly', 'readonly')
 
     if ($("[data-object='vcard-form']").hasClass('editable'))
-      $('.vcard-input, .vcard-textarea').parents('.control-group').show()
+      $('.vcard-input').parents('.control-group').show()
     else
       $('.vcard-input').each ->
         if ($(this).val() == "")
           $(this).parents('.control-group').hide()
-      if ($('.vcard-textarea').val() == "")
-        $('.vcard-textarea').parents('.control-group').hide()
 
 
   # Clear inputs by click-on-cross
   $('[data-action="clear-self-input-value"]').click ->
-    $(this).prev('.vcard-input').attr('value', '')
-    $(this).prev('.vcard-textarea').val('')
+    if ($(this).hasClass('controls-remove-address'))
+      $('.vcard-address-line1, .vcard-address-line2').val("")
+    else
+      $(this).prev('.vcard-input').val("")
 
   # Toggle vcard form
   $('[data-action="change-form-open-state"]').click ->
