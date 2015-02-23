@@ -12,6 +12,8 @@ $(document).ready ->
 
     $('.vcard-name').focus();
 
+    if ($('.vcard-site').val() == "")
+      $('.vcard-site').val("www.marble-x.ru")
 
     if $('.vcard-input').attr('readonly')
       $('.vcard-input').removeAttr('readonly')
