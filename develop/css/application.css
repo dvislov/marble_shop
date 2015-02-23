@@ -799,6 +799,7 @@ body {
   vertical-align: middle;
   display: table-cell;
   width: 100%;
+  position: relative;
 }
 .catalog-item-header {
   margin: 0 0 13px;
@@ -829,6 +830,23 @@ body {
 .catalog-item-price-currency {
   font-variant: small-caps;
   padding-left: 8px;
+}
+.catalog-center-badge {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,255,255,0.34);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  margin-left: -49px;
+  margin-top: -49px;
+  color: #fff;
+  font-size: 2.125rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
 }
 .vcards {
   padding: 0 70px 0 270px;
