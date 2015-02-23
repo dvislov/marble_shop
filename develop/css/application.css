@@ -846,7 +846,32 @@ body {
   font-size: 2.125rem;
   text-transform: uppercase;
   text-align: center;
-  line-height: 100px;
+  line-height: 108px;
+}
+.catalog-discount-badge {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  bottom: 20px;
+}
+.catalog-discount-badge-pre {
+  background-color: #f7099b;
+  left: 50%;
+  margin-left: -78px;
+  line-height: 78px;
+}
+.catalog-discount-badge-percent {
+  background-color: #c12be7;
+  left: 26px;
+  padding-top: 22px;
+}
+.catalog-discount-value {
+  font-size: 1.5625rem;
 }
 .vcards {
   padding: 0 70px 0 270px;
